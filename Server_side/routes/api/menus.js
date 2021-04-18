@@ -11,10 +11,10 @@ router.get('/', (req, res) => {
   });
 
 
-  router.get('/:id', (req, res) => {
-    Menu.findById(req.params.id)
-      .then(menu => res.json(menu))
-      .catch(err => res.status(404).json({ nomenufound: 'No menu found' }));
-  });
+  // router.get('/:id', (req, res) => {
+  //   Menu.findById(req.params.id)
+  //     .then(menu => res.json(menu))
+  //     .catch(err => res.status(404).json({ nomenufound: 'No menu found' }));
+  // });
 
   module.exports = router;
